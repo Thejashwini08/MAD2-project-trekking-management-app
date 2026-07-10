@@ -1,2 +1,3 @@
 # MAD2-project-trekking-management-app
 I am uploding my MAD 2 project of my IITM BS degree course here
+Trekking Management Application is a full-stack web application built using Flask, Vue.js, SQLite, Bootstrap, Redis, and Celery to streamline trekking operations. It provides role-based access for Admin, Trek Staff, and Users, enabling trek management, user registration, bookings, staff assignment, and real-time slot management. The application also includes authentication, search and filtering, booking history, caching for improved performance, and automated background tasks such as reminders, monthly reports, and CSV exports.
