@@ -30,7 +30,7 @@ def book_trek():
     # Allow booking only when trek status is Open, and prevent overbooking
     if trek.status != "Open" or trek.available_slots <= 0:
         return jsonify({"error": "Trek is not open or slots are full"}), 400
-
+    #trek status is Open and slots are available, proceed with booking
     booking = Booking(
         user_id=session["user_id"],
         trek_id=trek_id,

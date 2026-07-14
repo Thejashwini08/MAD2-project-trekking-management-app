@@ -20,11 +20,11 @@ def make_celery():
     celery_app.conf.beat_schedule = {
         "daily-trek-reminders": {
             "task": "tasks.send_daily_reminders",
-            "schedule": crontab(hour=21, minute=35),   # runs every day at 8:00 AM
+            "schedule": crontab(hour=19, minute=55),   # runs every day at 8:00 AM
         },
         "monthly-admin-report": {
             "task": "tasks.generate_monthly_report",
-            "schedule": crontab(day_of_month=13, hour=21, minute=35),  # 1st of every month, 6:00 AM
+            "schedule": crontab(day_of_month=14, hour=19, minute=55),  # 1st of every month, 6:00 AM
         },
     }
     return celery_app
