@@ -29,7 +29,7 @@ class Config:
     SMTP_HOST = os.environ.get("SMTP_HOST", "smtp.gmail.com")
     SMTP_PORT = int(os.environ.get("SMTP_PORT", 587))
     SMTP_USER = os.environ.get("SMTP_USER", "thejashwini647@gmail.com")
-    SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "lpesjnpmrvvpbfwo")
+    SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "<your smtp passoword>")
     SMTP_FROM = os.environ.get("SMTP_FROM", SMTP_USER)
 
     EXPORTS_DIR = os.path.join(BASE_DIR, "exports")
